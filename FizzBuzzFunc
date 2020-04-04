@@ -1,0 +1,25 @@
+/* 
+ * Create a function, FizzBuzzFunc that can take any positive integer as a parameter, and
+ return either the number, the word "Fizz" if divisible by 3, the word "Buzz" if divisible
+ by 5, or the word "FizzBuzz" if divisible by both. Basically the algorithm applied in
+ Step 1. except the input for the function determines the output instead of a counting for loop.
+ */
+ 
+ var FizzBuzzFunc = function(positiveInteger) {
+    if (positiveInteger % 15 === 0) {
+      return ("FizzBuzz");
+    } 
+    else if (positiveInteger % 3 === 0) {
+      return ("Fizz");
+    } 
+    else if (positiveInteger % 5 === 0) {
+      return ("Buzz");
+    } 
+    else (positiveInteger)
+      return (positiveInteger)
+    // return value;
+};
+
+// Test it
+console.log('Testing FizzBuzzFunc:');
+console.log(FizzBuzzFunc(40));
