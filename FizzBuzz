@@ -1,0 +1,22 @@
+/*
+ * Complete the function FizzBuzz so that it logs to the console (using "console.log()") the numbers from 1 to 100 utilizing a for loop.
+ With the exception that any numbers divisible by 3 should instead log "Fizz". And 
+ numbers divisible by 5 should instead log "Buzz".  And numbers that are divisible by both 3 and 5 should log "FizzBuzz".
+ */
+
+var FizzBuzz = function() {
+     for (var counter = 1; counter <= 100; counter++) {
+       if (counter % 15 === 0)
+        console.log("FizzBuzz");
+      else if (counter % 3 === 0)
+        console.log("Fizz");
+      else if (counter % 5 === 0)
+        console.log("Buzz");
+      else 
+        console.log(counter)
+     }
+};
+
+// Test it
+console.log('Testing FizzBuzz:');
+FizzBuzz();
