@@ -1,0 +1,21 @@
+/* 
+ * Return true if the given string is a palindrome. Otherwise, return false.
+ A palindrome is a word or sentence that's spelled the same way both forward. and backward, ignoring punctuation, case, and spacing.
+ */
+ 
+function palindrome(str) {
+
+  var smallStr = str.toLowerCase();
+
+  var reversed = smallStr.split("").reverse().join("");
+  if (reversed === smallStr) {
+    return true;
+  } else {
+    return false;
+  }
+  
+}
+
+
+
+console.log(palindrome("_eye"));
